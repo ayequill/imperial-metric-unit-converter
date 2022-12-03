@@ -36,11 +36,11 @@ function converter() {
     results = inputEl.value * metric[i];
     imperialToMetric.push(results.toFixed(3));
   }
-  lengthText.textContent = `${inputEl.value} meters = ${metricToImperial[0]} feet| ${inputEl.value} feet = ${imperialToMetric[0]} meters`;
+  lengthText.textContent = `${inputEl.value} meters = ${metricToImperial[0]} feet | ${inputEl.value} feet = ${imperialToMetric[0]} meters`;
 
-  volumeText.textContent = `${inputEl.value} liters = ${metricToImperial[1]} gallons| ${inputEl.value} gallons = ${imperialToMetric[1]} liters`;
+  volumeText.textContent = `${inputEl.value} liters = ${metricToImperial[1]} gallons | ${inputEl.value} gallons = ${imperialToMetric[1]} liters`;
 
-  weightText.textContent = `${inputEl.value} kilos = ${metricToImperial[2]} pounds| ${inputEl.value} pounds = ${imperialToMetric[2]} kilos`;
+  weightText.textContent = `${inputEl.value} kilos = ${metricToImperial[2]} pounds | ${inputEl.value} pounds = ${imperialToMetric[2]} kilos`;
 }
 
 // 1 meter = 3.281 feet
