@@ -7,22 +7,7 @@ let weightText = document.getElementById("weightText");
 const metric = [(meter = 0.3048), (litter = 3.79), (kilogram = 0.454)];
 const imperial = [(feet = 3.281), (gallon = 0.264), (pound = 2.204)];
 
-
-
-inputEl.addEventListener("input", function(){
-    if (inputEl.value == ""){
-        inputEl.setAttribute ("placeholder", "type here")
-    }else {
-        converter()
-    }
-})
-
-convertBtn.addEventListener("click", function () {
-
-  converter();
-});
-
-function converter() {
+inputEl.addEventListener("input",function () {
   metricToImperial = [];
   imperialToMetric = [];
   for (i = 0; i < metric.length; i++) {
@@ -41,8 +26,4 @@ function converter() {
   volumeText.textContent = `${inputEl.value} liters = ${metricToImperial[1]} gallons | ${inputEl.value} gallons = ${imperialToMetric[1]} liters`;
 
   weightText.textContent = `${inputEl.value} kilos = ${metricToImperial[2]} pounds | ${inputEl.value} pounds = ${imperialToMetric[2]} kilos`;
-}
-
-// 1 meter = 3.281 feet
-// 1 liter = 0.264 gallon
-// 1 kilogram = 2.204 pound
+})
