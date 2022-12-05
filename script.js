@@ -1,6 +1,6 @@
 const convertBtn = document.getElementById("convertBtn");
 let inputEl = document.getElementById("input-el");
-let lengthText = document.getElementById("lenghtText");
+let lengthText = document.getElementById("lengthText");
 let volumeText = document.getElementById("volumeText");
 let weightText = document.getElementById("weightText");
 
@@ -15,7 +15,6 @@ inputEl.addEventListener("input",function () {
     results = inputEl.value * imperial[i];
     metricToImperial.push(results.toFixed(3));
   }
-  console.log(metricToImperial);
   for (i = 0; i < imperial.length; i++) {
     let results;
     results = inputEl.value * metric[i];
